@@ -40,20 +40,8 @@
   </head>
   <body class="bg-white text-gray-800 font-sans">
 <!-- Header -->
-<header class="bg-white text-gray-800 p-4 shadow-md fade-in">
-  <div class="max-w-6xl mx-auto flex justify-between items-center">
-    <div class="flex items-center space-x-4">
-      <img src="logo_pagc.png" alt="Logo Proyecto PAGC" class="h-10 w-auto" />
-      <h1 class="text-xl font-bold">Proyecto PAGC – Neos</h1>
-    </div>
-    <nav class="space-x-4 text-sm text-teal-600 font-medium">
-      <a href="#inicio" class="hover:underline">Inicio</a>
-      <a href="#sobre" class="hover:underline">Sobre Nosotros</a>
-      <a href="#metodo" class="hover:underline">Método Neos</a>
-      <a href="#actividades" class="hover:underline">Actividades</a>
-      <a href="#contacto" class="hover:underline">Contacto</a>
-    </nav>
-  </div>
+<header class="bg-teal-600 text-white p-4 shadow-md fade-in">
+  ...
 </header>
 
     <!-- Inicio -->
@@ -135,5 +123,14 @@
       <p class="text-sm">&copy; 2025 Proyecto PAGC – Neos. Todos los derechos reservados.</p>
     </footer>
   </body>
+  <script>
+  const toggleBtn = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
 </html>
 

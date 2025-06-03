@@ -144,19 +144,41 @@
 
       <!-- Contacto -->
 <section id="contacto" class="bg-teal-50 py-16 px-4 fade-in">
-  <div class="max-w-3xl lg:max-w-4xl mx-auto space-y-6">
-    <h3 class="text-2xl font-semibold mb-4">Contacto</h3>
-    <p class="mb-2">¿Querés consultar o saber más?</p>
-    <p class="text-gray-700 mb-6">Escribinos a <a href="mailto: pagc.proyecto@gmail.com" class="text-teal-600 underline">pagc.proyecto@gmail.com</a> o completá el siguiente formulario:</p>
-    
-    <!-- Formulario -->
-    <form action="https://formsubmit.co/pagc.proyecto@gmail.com" method="POST">
-  <input type="text" name="nombre" required placeholder="Tu nombre" class="mb-2 block w-full" />
-  <input type="email" name="email" required placeholder="Tu email" class="mb-2 block w-full" />
-  <textarea name="mensaje" required placeholder="Tu mensaje" class="mb-4 block w-full"></textarea>
+  <div class="max-w-3xl mx-auto space-y-8">
+    <h3 class="text-2xl font-semibold text-center">Contacto</h3>
+    <p class="text-center">¿Querés consultar o saber más?</p>
 
-  <!-- Desactiva el captcha automático -->
-  <input type="hidden" name="_captcha" value="false" />
+    <form action="https://formsubmit.co/pagc.proyecto@gmail.com" method="POST" class="space-y-6 bg-white p-6 rounded-lg shadow-md">
+      <!-- Nombre -->
+      <div>
+        <label for="nombre" class="block text-sm font-medium text-gray-700 mb-1">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" />
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Correo electrónico</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" />
+      </div>
+
+      <!-- Mensaje -->
+      <div>
+        <label for="mensaje" class="block text-sm font-medium text-gray-700 mb-1">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500 resize-none"></textarea>
+      </div>
+
+      <!-- Botón -->
+      <div class="text-center">
+        <button type="submit" class="bg-teal-600 text-white px-6 py-3 rounded-md hover:bg-teal-700 transition">Enviar</button>
+      </div>
+
+      <!-- Redirección "Gracias" -->
+      <input type="hidden" name="_next" value="https://proyepagc.github.io/proyecto-pagc-web/gracias.html">
+      <input type="hidden" name="_captcha" value="false">
+    </form>
+  </div>
+</section>
+
 
   <!-- Redirige a la página de agradecimiento -->
   <input type="hidden" name="_next" value="https://proyepagc.github.io/proyecto-pagc-web/gracias.html" />

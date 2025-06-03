@@ -150,12 +150,24 @@
     <p class="text-gray-700 mb-6">Escribinos a <a href="mailto: pagc.proyecto@gmail.com" class="text-teal-600 underline">pagc.proyecto@gmail.com</a> o completá el siguiente formulario:</p>
     
     <!-- Formulario -->
-    <form class="space-y-4" action="mailto:pagc.proyecto@gmail.com" method="POST" enctype="text/plain">
-      <input type="text" name="nombre" placeholder="Tu nombre" required class="w-full p-2 border border-gray-300 rounded" />
-      <input type="email" name="email" placeholder="Tu email" required class="w-full p-2 border border-gray-300 rounded" />
-      <textarea name="mensaje" placeholder="Escribí tu mensaje..." rows="4" required class="w-full p-2 border border-gray-300 rounded"></textarea>
-      <button type="submit" class="bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700 transition">Enviar</button>
+    <section id="formulario-directo" class="py-12 px-4 bg-gray-50 fade-in">
+  <div class="max-w-2xl mx-auto">
+    <h3 class="text-2xl font-semibold mb-4">Formulario de Contacto Directo</h3>
+    <form action="https://formsubmit.co/pagc.proyecto@gmail.com" method="POST" class="space-y-4">
+      <!-- Protecciones opcionales -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://proyepagc.github.io/proyecto-pagc-web/gracias.html">
+
+      <input type="text" name="nombre" placeholder="Tu nombre" required class="border p-2 w-full">
+      <input type="email" name="email" placeholder="Tu correo" required class="border p-2 w-full">
+      <textarea name="mensaje" placeholder="Tu mensaje" required class="border p-2 w-full"></textarea>
+
+      <button type="submit" class="bg-teal-600 text-white py-2 px-4 rounded hover:bg-teal-700">
+        Enviar
+      </button>
     </form>
+  </div>
+</section>
 
     <!-- Redes sociales con íconos -->
   <div class="flex space-x-6 mt-4">

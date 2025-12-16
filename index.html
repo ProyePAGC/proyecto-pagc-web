@@ -301,6 +301,43 @@ document.addEventListener('DOMContentLoaded', function() {
   // ... resto del código ...
 });
 </script>
+  <script>
+// Función para aumentar el tamaño del texto
+document.addEventListener('DOMContentLoaded', function() {
+  // Obtener el botón
+  const botonAumentar = document.getElementById('aumentarTexto');
+  
+  // Variable para seguir el estado actual del tamaño
+  let estadoTexto = 0; // 0: normal, 1: grande, 2: muy grande
+  
+  // Añadir evento de clic
+  botonAumentar.addEventListener('click', function() {
+    // Obtener el elemento body
+    const body = document.body;
+    
+    // Cambiar el tamaño según el estado actual
+    if (estadoTexto === 0) {
+      body.classList.remove('texto-normal');
+      body.classList.add('texto-grande');
+      estadoTexto = 1;
+      botonAumentar.textContent = 'A++';
+    } else if (estadoTexto === 1) {
+      body.classList.remove('texto-grande');
+      body.classList.add('texto-muy-grande');
+      estadoTexto = 2;
+      botonAumentar.textContent = 'A-';
+    } else {
+      body.classList.remove('texto-muy-grande');
+      body.classList.add('texto-normal');
+      estadoTexto = 0;
+      botonAumentar.textContent = 'A+';
+    }
+  });
+  
+  // Establecer tamaño inicial
+  document.body.classList.add('texto-normal');
+});
+</script>
     </body>
     </html>
 

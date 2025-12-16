@@ -115,7 +115,6 @@
     that promotes the creation, education, and dissemination of art with an inclusive perspective.
   </p>
 </div>
-
 <div class="flex gap-4 mb-6">
   <button onclick="setLang('es')">Español</button>
   <button onclick="setLang('pt')">Português</button>
@@ -248,6 +247,15 @@
   });
 </script>
 </html>
+<script>
+  function setLang(lang) {
+    document.getElementById("lang-es").classList.add("hidden");
+    document.getElementById("lang-pt").classList.add("hidden");
+    document.getElementById("lang-en").classList.add("hidden");
+
+    document.getElementById("lang-" + lang).classList.remove("hidden");
+  }
+</script>
     </body>
 
 

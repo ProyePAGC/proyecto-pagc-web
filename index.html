@@ -30,9 +30,34 @@
     transition: color 0.3s ease;
   }
 
-  ..link-text:hover {
+  .link-text:hover {
   color: #115e59;
   text-decoration: underline;
+
+/* Estilos para el botón de accesibilidad */
+.accesibilidad {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#aumentarTexto {
+  background-color: #1AB5A8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#aumentarTexto:hover {
+  background-color: #148f85;
+}
+</style>
+
 
 <!-- Header -->
 <header class="bg-teal-600 text-white">

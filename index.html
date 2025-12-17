@@ -35,10 +35,12 @@
       }
 
       /* Estilos para el botón de accesibilidad */
-      .accesibilidad {
-        display: inline-block;
-        margin-left: 10px;
-      }
+.accesibilidad {
+  position: fixed; /* Esto hace que el botón permanezca fijo al desplazar */
+  top: 20px;       /* Distancia desde la parte superior */
+  right: 20px;     /* Distancia desde la derecha */
+  z-index: 1000;   /* Asegura que esté por encima de otros elementos */
+}
 
       #aumentarTexto {
         background-color: #1AB5A8;

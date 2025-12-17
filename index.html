@@ -30,9 +30,11 @@
     transition: color 0.3s ease;
   }
 
-  .link-text:hover {
-    color: #115e59;
-    text-decoration: underline;
+  ..link-text:hover {
+  color: #115e59;
+  text-decoration: underline;
+} /* Añade esta llave de cierre */
+
 /* Estilos para el botón de accesibilidad */
 .accesibilidad {
   position: fixed;
@@ -302,7 +304,6 @@
 
     document.getElementById("lang-" + lang).classList.remove("hidden");
   }
-</script>
   
   // Función para aumentar el tamaño del texto
 document.addEventListener('DOMContentLoaded', function() {

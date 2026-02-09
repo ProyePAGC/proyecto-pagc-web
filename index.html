@@ -1,139 +1,138 @@
 <!DOCTYPE html>
-<html lang="es" class="dark">
+<html lang="es" class="light">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deep Dive: Proceso Creativo | PAGC</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PAGC - Plataforma de Producción Artística y Gestión Cultural</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet"/>
 
-  <!-- Tailwind config -->
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#13ec5b",
-            "background-light": "#f6f8f6",
-            "background-dark": "#102216"
-          },
-          fontFamily: {
-            display: ["Manrope", "sans-serif"]
-          }
-        }
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        primary: "#13ec5b",
+        "background-light": "#f6f8f6",
+        "background-dark": "#102216"
+      },
+      fontFamily: {
+        display: ["Lexend", "sans-serif"]
       }
     }
-  </script>
+  }
+}
+</script>
 
-  <style>
-    body {
-      font-family: 'Manrope', sans-serif;
-    }
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'opsz' 24;
-    }
-  </style>
+<style>
+body { font-family: 'Lexend', sans-serif; }
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'opsz' 24;
+}
+</style>
 </head>
 
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<body class="bg-background-light dark:bg-background-dark text-[#0d1b12] dark:text-white transition-colors duration-300">
 
 <!-- HEADER -->
-<header class="sticky top-0 z-50 backdrop-blur-md border-b border-white/10 bg-background-light/80 dark:bg-background-dark/80">
-  <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
-    <div class="flex items-center gap-8">
-      <div class="flex items-center gap-2 text-primary">
-        <span class="material-symbols-outlined text-3xl">change_history</span>
-        <h1 class="text-xl font-extrabold">PAGC</h1>
+<header class="sticky top-0 z-50 backdrop-blur-md border-b border-[#e7f3eb] dark:border-[#1a3a24] bg-background-light/80 dark:bg-background-dark/80">
+  <div class="max-w-[1280px] mx-auto px-6 h-20 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="bg-primary p-2 rounded-lg text-background-dark">
+        <span class="material-symbols-outlined text-3xl">diversity_3</span>
       </div>
-      <nav class="hidden md:flex gap-6 text-sm font-semibold">
-        <a href="#" class="hover:text-primary">Proyectos</a>
-        <a href="#" class="text-primary border-b-2 border-primary">Procesos</a>
-        <a href="#" class="hover:text-primary">Artistas</a>
-        <a href="#" class="hover:text-primary">Gestión Cultural</a>
-      </nav>
+      <h1 class="text-2xl font-black tracking-tighter">PAGC</h1>
     </div>
-    <button class="bg-primary text-background-dark px-4 py-2 rounded-lg font-bold text-sm">
-      Perfil
-    </button>
+
+    <nav class="hidden md:flex gap-8 text-sm font-semibold">
+      <a href="#" class="hover:text-primary">Producción</a>
+      <a href="#" class="hover:text-primary">Formación</a>
+      <a href="#" class="hover:text-primary">Gestión</a>
+      <a href="#" class="hover:text-primary">Salud Mental</a>
+    </nav>
+
+    <div class="flex gap-3">
+      <button class="p-2 rounded-lg bg-[#e7f3eb] dark:bg-[#1a3a24]" title="Ajustar contraste">
+        <span class="material-symbols-outlined">contrast</span>
+      </button>
+      <button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary text-background-dark font-bold text-sm">
+        <span class="material-symbols-outlined">sign_language</span>
+        <span class="hidden sm:inline">Activar LSA</span>
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- MAIN -->
-<main class="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 lg:grid-cols-12 gap-10">
+<main class="max-w-[1280px] mx-auto px-6 py-10">
 
-<!-- ASIDE -->
-<aside class="lg:col-span-4 space-y-6">
-  <section>
-    <span class="px-3 py-1 bg-primary/20 text-primary text-xs font-bold rounded-full">
-      En profundidad
+<!-- HERO -->
+<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
+  <div class="space-y-8 order-2 lg:order-1">
+    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/20 text-xs font-bold uppercase">
+      Plataforma de Impacto Social
     </span>
-    <h2 class="text-4xl font-black mt-4">Morfología del Silencio</h2>
-    <p class="text-slate-500 dark:text-primary/60 mt-2">
-      Explorando el crecimiento y el aprendizaje a través del arte inclusivo.
+
+    <h2 class="text-5xl md:text-7xl font-black leading-tight">
+      Potenciando la cultura, <span class="text-primary italic">integrando</span> miradas
+    </h2>
+
+    <p class="text-lg md:text-xl text-[#4c9a66] dark:text-gray-400 max-w-xl">
+      Producción artística y gestión cultural con inclusión, soporte en LSA y acompañamiento integral.
     </p>
 
-    <div class="flex items-center gap-3 mt-4">
-      <img
-        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxY2a1NY1PdwYzg85ilExzjO_wHZFhoPNDXFyUH1Wu4g63CXhkpPXcjgFeLBH7ESB1Lc3vK0sVED21FQo4R1ETyqS-pK7a2Ie3MCMEeLoKtweowNHenCWJxu1bXoBdS5oHTHbSLb44_hNSVY9yWLyWpb44Ft6elfPadJSrifv66jdl0E_otyzIWcnlFu8m2hDDhlu6vnOntI4yZYGkwAcD7pW1bXz4vtA06xAIaJCg07vBaTUoXbRmsFR5Kn2-xLx_9Z-Hp91LPajl"
-        alt="Retrato de la artista Elena Ramírez"
-        class="w-10 h-10 rounded-full object-cover border-2 border-primary"
-      />
-      <div>
-        <p class="font-bold">Elena Ramírez</p>
-        <p class="text-xs text-slate-400">Artista Visual & Mediadora LSA</p>
-      </div>
+    <div class="flex flex-wrap gap-4">
+      <button class="px-8 py-4 bg-primary text-background-dark font-black rounded-xl">Explorar Proyectos</button>
+      <button class="px-8 py-4 border-2 border-[#e7f3eb] dark:border-[#1a3a24] rounded-xl font-bold">Nuestra Misión</button>
     </div>
-  </section>
-</aside>
+  </div>
 
-<!-- CONTENT -->
-<section class="lg:col-span-8 space-y-12">
-
-  <!-- FASE 1 -->
-  <section aria-labelledby="fase-1" class="pl-8 border-l-2 border-primary/20 relative">
-    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-primary rounded-full ring-4 ring-background-light dark:ring-background-dark"></div>
-    <h2 id="fase-1" class="text-2xl font-black">
-      <span class="text-primary font-mono">01.</span> Fase Conceptual
-    </h2>
-    <p class="text-slate-400 mt-2">
-      Traducción sensorial del silencio en forma visual y táctil.
-    </p>
-  </section>
-
-  <!-- FASE 2 -->
-  <section aria-labelledby="fase-2" class="pl-8 border-l-2 border-primary/20 relative">
-    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-primary rounded-full ring-4 ring-background-light dark:ring-background-dark"></div>
-    <h2 id="fase-2" class="text-2xl font-black">
-      <span class="text-primary font-mono">02.</span> Desarrollo
-    </h2>
-    <p class="text-slate-400 mt-2">
-      Trabajo colaborativo con validaciones desde la comunidad sorda.
-    </p>
-  </section>
-
-  <!-- FASE 3 -->
-  <section aria-labelledby="fase-3" class="pl-8 border-l-2 border-primary/20 relative">
-    <div class="absolute -left-[11px] top-0 w-5 h-5 bg-primary rounded-full ring-4 ring-background-light dark:ring-background-dark"></div>
-    <h2 id="fase-3" class="text-2xl font-black">
-      <span class="text-primary font-mono">03.</span> Finalización
-    </h2>
-    <p class="text-slate-400 mt-2">
-      Obra accesible con mediación en Lengua de Señas Argentina.
-    </p>
-  </section>
-
+  <!-- HERO IMAGE -->
+  <div class="relative order-1 lg:order-2">
+    <div class="aspect-square rounded-[2rem] overflow-hidden shadow-2xl">
+      <img
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHAeW0f2VM4bv54hkZbGguXjVz6TFeLYYwgmHcDf1ypShIxgr5aLYLFjsoplVsroQhYyxvq5_bKj6oRSaSGxzBCmdRYyt4zR9tHG3vGn2ZLUETbRO7I3bxPLNybdhj0XDOT30NFC4SPD4MDQ9I5oSwzTmQRAvLyY1bWUlHDqo3z8iN0UqQhlhHGQ7lIjGMnU0e2-bf1na4jCTvFcJDDP_6b8igcXganeC-H0vafLnaiKf5BzY8gKPoI7NBladC9GS6XgyAIH1RgoDi"
+        alt="Intérprete de Lengua de Señas Argentina sonriendo"
+        class="w-full h-full object-cover"
+      />
+    </div>
+  </div>
 </section>
+
+<!-- PILARES -->
+<section class="mb-24">
+  <h3 class="text-4xl font-black mb-12">Nuestros Pilares</h3>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <article class="p-8 rounded-3xl bg-white dark:bg-[#1a3a24] border">
+      <h4 class="text-xl font-black mb-3">Producción Artística</h4>
+      <p class="text-sm text-[#4c9a66] dark:text-gray-400">Teatro, artes visuales y propuestas inclusivas.</p>
+    </article>
+
+    <article class="p-8 rounded-3xl bg-white dark:bg-[#1a3a24] border">
+      <h4 class="text-xl font-black mb-3">Formación</h4>
+      <p class="text-sm text-[#4c9a66] dark:text-gray-400">Capacitaciones, talleres y desarrollo profesional.</p>
+    </article>
+
+    <article class="p-8 rounded-3xl bg-white dark:bg-[#1a3a24] border">
+      <h4 class="text-xl font-black mb-3">Gestión Cultural</h4>
+      <p class="text-sm text-[#4c9a66] dark:text-gray-400">Curaduría y acompañamiento institucional.</p>
+    </article>
+
+    <article class="p-8 rounded-3xl bg-white dark:bg-[#1a3a24] border">
+      <h4 class="text-xl font-black mb-3">Salud Mental</h4>
+      <p class="text-sm text-[#4c9a66] dark:text-gray-400">Arte terapia y bienestar emocional.</p>
+    </article>
+  </div>
+</section>
+
 </main>
 
-<!-- FOOTER -->
-<footer class="py-10 border-t border-white/10 text-center text-sm text-slate-400">
-  PAGC © 2024–2026 · Plataforma de Producción Artística y Gestión Cultural
+<footer class="border-t border-[#e7f3eb] dark:border-[#1a3a24] py-10 text-center text-xs text-[#4c9a66] dark:text-gray-400">
+  © 2024–2026 PAGC · Plataforma de Producción Artística y Gestión Cultural
 </footer>
 
 </body>
